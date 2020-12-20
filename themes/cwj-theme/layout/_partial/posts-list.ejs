@@ -1,0 +1,22 @@
+<% page.posts.each(function (post) { %>
+<div class="post border-gray-400 border-b mb-12">
+        <h2 class="text-3xl font-bold">
+            <a href="<%- url_for(post.path) %>" class="text-copy-primary">
+                <%- post.title %>
+            </a>
+        </h2>
+        <div class="text-copy-secondary mb-4">
+            <span><%- date(post.date)  %></span>
+            <span> &middot; </span>
+            <span><%- symbolsTime(post.content) %></span>
+        </div>
+
+        <div class="text-lg mb-4">
+            <%- post.summary %>
+        </div>
+
+        <div class="mb-8">
+            <a href="<%- url_for(post.path) %>" class="font-bold uppercase">Read More</a>
+        </div>
+</div> <!-- end post -->
+<% }) %>
