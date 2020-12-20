@@ -17,6 +17,7 @@
     "autoprefixer": "^10.1.0",
     "cssnano": "^4.1.10",
     "hexo": "^5.0.0",
+    "hexo-admonition": "^1.1.2",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
