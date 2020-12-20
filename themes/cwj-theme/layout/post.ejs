@@ -2,14 +2,12 @@
     <h1 class="text-4xl font-bold leading-tight"><%- page.title %></h1>
     <div class="text-sm text-gray-600 mb-4">
         Last Updated On <%- date(page.date) %>
-        <span><%- date(page.date)  %></span>
+        <span><%- date(page.date) %></span>
         <span> &middot; </span>
         <span><%- symbolsTime(page.content) %></span>
     </div>
     <% if (page.feature_image) { %>
-        <div>
-            <%- image_tag(page.feature_image) %>
-        </div>
+        <img src="/<%- page.path %><%- page.feature_image %>" alt="feature image" />
     <% } %>
     <% if (page.introduction) { %>
         <div class="text-3xl mt-10 mb-10 pl-10 text-bold border-l-4 border-solid border-blue-500">
