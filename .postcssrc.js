@@ -1,7 +1,7 @@
 const tailwindrc = require("./tailwind.config")
 
 module.exports = {
-    from: undefined,
+    from: 'themes/cwj-theme/source/css/main.pcss',
     plugins: {
         'postcss-import': {},
         'postcss-nested': {},
