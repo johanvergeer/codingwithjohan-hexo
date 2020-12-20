@@ -30,6 +30,7 @@
     "postcss-import": "^14.0.0",
     "postcss-load-config": "^3.0.0",
     "postcss-nested": "^5.0.3",
+    "prism-material-themes": "^1.0.4",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
