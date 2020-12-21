@@ -28,7 +28,7 @@ if (page.title) {
             <div>
                 <a href="<%- url_for() %>">
                     <%- image_tag('/img/logo-100.png', {class: "inline w-12", alt: "Coding with Johan"}) %>
-                    <p class="inline text-copy-primary text-xl ml-4">Coding with Johan</p>
+                    <p class="inline text-copy-primary text-xl ml-4"><%= config.title %></p>
                 </a>
             </div>
             <div class="block lg:hidden">
@@ -45,9 +45,7 @@ if (page.title) {
                 <li>
                     <!-- TODO: Theme toggle -->
                 </li>
-                <li>
-                    <a href="<%- url_for('archive') %>" class="text-copy-primary hover:text-gray-600">Blog</a>
-                </li>
+                <!-- TODO: Archive link -->
             </ul>
         </nav>
     </header>
