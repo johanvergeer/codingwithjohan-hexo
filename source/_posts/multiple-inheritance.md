@@ -3,8 +3,6 @@ title: Multiple Inheritance and the Diamond Problem
 category: Python
 date: 2020-01-17
 tags: ['Python']
-summary: Multiple inheritance is a powerful Python concept.
-    This article will show you how to use multiple inheritance and what to be aware of.
 sources:
   - title: Diamond inheritance on Wikipedia
     url: https://en.wikipedia.org/wiki/Multiple_inheritance#/media/File:Diamond_inheritance.svg
@@ -13,24 +11,11 @@ sources:
 feature_image: multiple-inheritance-and-the-diamond-problem.png
 ---
 
-slug: python-multiple-inheritance
-category: Python
-date: 2020-01-17T16:56:43.451Z
-summary: Multiple inheritance is a powerful Python concept.
-This article will show you how to use multiple inheritance and what to be aware of.
-introduction:
 In this post, I will show you what multiple inheritance is, how you can use it and what to watch out for.
 First you will learn about single and multiple inheritance and how you can use them in Python.
 After this you will learn some multiple inheritance gotchas among which the dreaded diamond problem.
-feature_image: /uploads/multiple-inheritance-and-the-diamond-problem.png
-tags:
-- Python
-  sources:
-- title: Diamond inheritance on Wikipedia
-  url: https://en.wikipedia.org/wiki/Multiple_inheritance#/media/File:Diamond_inheritance.svg
-- title: Photo by Holger Link on Unsplash
-  url: https://unsplash.com/@photoholgic?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText
----
+
+<!-- more -->
 
 # Basic class inheritance
 

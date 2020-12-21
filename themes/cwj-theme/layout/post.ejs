@@ -5,17 +5,17 @@
         <span> &middot; </span>
         <span><%- symbolsTime(page.content) %></span>
     </div>
+    <% if (page.excerpt) { %>
+        <div class="text-xl mt-10 mb-10 pl-10 text-bold border-l-4 border-solid border-blue-500">
+            <%- page.excerpt %>
+        </div>
+    <% } %>
     <% if (page.feature_image) { %>
         <img src="/<%- page.path %><%- page.feature_image %>" alt="feature image" />
     <% } %>
-    <% if (page.introduction) { %>
-        <div class="text-3xl mt-10 mb-10 pl-10 text-bold border-l-4 border-solid border-blue-500">
-            <%- page.introduction %>
-        </div>
-    <% } %>
     <!-- TODO Add tags -->
     <div class="markdown-body mb-8">
-        <%- page.content %>
+        <%- page.more %>
     </div>
     <!--  TODO Add link back to blog  -->
     <!-- TODO Add sources list   -->

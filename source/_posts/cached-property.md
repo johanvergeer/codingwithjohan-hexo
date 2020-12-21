@@ -8,9 +8,10 @@ tags: ['Python', 'functools', 'performance']
 The `cached_property` decorator can save a lot of computation time in return of some RAM memory.
 Can this decorator be used anywhere, or should it be used sparingly. Let's find out!
 
-{% note success %}
-`cached_property` is added in Python 3.8
-{% endnote %}
+<!-- more -->
+
+!!! warning ""
+    `cached_property` is added in Python 3.8
 
 # The test setup
 
