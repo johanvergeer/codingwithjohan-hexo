@@ -1,8 +1,24 @@
+<%
+var joinStr = ' - '
+var title = config.title
+if (page.title) {
+    title = [page.title, title].join(joinStr)
+}
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title><%= title %></title>
+    <!-- TODO Add favicon  -->
+    <!-- TODO Add apple touch icon   -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="<%= config.description %>">
+    <meta name="author" content="<%= page.author || config.author %>">
+    <meta name="keywords" content="<%= config.keywords %>">
     <%- css('/css/main.css') %>
 </head>
 <body>
