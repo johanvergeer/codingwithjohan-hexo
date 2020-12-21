@@ -11,7 +11,7 @@ if (page.title) {
 <head>
     <meta charset="UTF-8">
     <title><%= title %></title>
-    <!-- TODO Add favicon  -->
+    <link rel="icon" type="image/png" href="<%- url_for("/img/favicon.png") %>">
     <!-- TODO Add apple touch icon   -->
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -46,7 +46,7 @@ if (page.title) {
                     <!-- TODO: Theme toggle -->
                 </li>
                 <li>
-                    <a href="<%- url_for('blog') %>" class="text-copy-primary hover:text-gray-600">Blog</a>
+                    <a href="<%- url_for('archive') %>" class="text-copy-primary hover:text-gray-600">Blog</a>
                 </li>
             </ul>
         </nav>
