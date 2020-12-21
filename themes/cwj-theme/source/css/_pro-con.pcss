@@ -1,0 +1,21 @@
+.procon li {
+    list-style: none !important;
+    text-indent: -2.5rem;
+    list-style-position: outside;
+
+    &:before {
+        padding-left: 1rem;
+        content: '';
+        display: inline-block;
+        height: 1rem;
+        margin-right: 0.8em;
+    }
+}
+
+.con li:before {
+    background-image: url(../img/minus-circle-solid.png);
+}
+
+.pro li:before {
+    background-image: url(../img/plus-circle-solid.png);
+}
